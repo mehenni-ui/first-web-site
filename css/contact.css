@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9E8E6;
+    padding: 25px 10px;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.nav-item li{
+    display: inline;
+    padding:0 5px;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+}
+
+.nav-item a:hover{
+    color: #000;
+    border-bottom: 3px #34B7A7 solid;
+}
+
+.contact{
+    border-bottom: 3px #34B7A7 solid;
+}
+
+
+.social-item li {
+    display: inline;
+    padding: 0 3px;
+    font-size: 16px;
+}
+
+.social-item a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.threeBar{
+    display: none;
+}
+
+.threeBar p{
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+    margin-top: 4px;
+}
+
+
+@media screen and (max-width:720px){
+    .threeBar{
+        display: block;
+    }
+    .nav-item{
+        display: none;
+    }
+}
+
+
+.contact-me{
+    padding: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.contact-me h1{
+    padding: 0 0 30px 0;
+    position: relative;
+}
+
+.contact-me h1::before{
+    content:"";
+    position: absolute;
+    background-color: #34B7A7;
+    width: 122px;
+    height: 3px;
+    top:  35px;
+}
+
+.contact-me p{
+    font-size: 18px;
+    color: #7A7A7A;
+}
+
+
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    margin-top: 20px;
+}
+
+.info {
+    font-family: sans-serif;
+    
+}
+
+.info div{
+    margin-bottom: 15px;
+}
+
+.info p{
+    color: #7A7A7A;
+}
+
+
+form{
+    margin-left: 15%;
+}
+
+form div{
+    margin-bottom: 10px;
+}
+
+form input{
+    height: 40px;
+    width: 250px;
+    padding: 5px 5px;
+}
+
+form textarea{
+    padding: 5px 5px;
+}
+
+
+form button{
+    background-color: #34B7A7;
+    color: #fff;
+    padding: 10px 30px 12px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-left: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px;
+    background-color: #E9E8E6;
+    padding: 20px 0;
+}
+
+.origin span{
+    color: #34B7A7;
+}
+
